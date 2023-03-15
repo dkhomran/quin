@@ -1,0 +1,190 @@
+body {
+  background: #f3fcf2;
+  font-size: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #191923;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0e79b2;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+.container {
+  overflow: hidden;
+}
+
+.logo {
+  font-size: 18px;
+  color: #ffc107;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.stars {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  color: red;
+}
+
+.login {
+  max-width: 300px;
+  width: 90%;
+  margin: 300px auto;
+}
+.login h2 {
+  color: #676767;
+}
+
+.form-control {
+  background-color: #eee;
+}
+
+.form-control:focus {
+  border-color: var(--bs-success);
+  box-shadow: none;
+}
+
+::selection {
+  background-color: #157347;
+  color: white;
+}
+
+/* start Bootstrap edit */
+
+.dropdown-menu[data-bs-popper] {
+  right: 0;
+  left: -100px;
+  margin-top: 10px;
+}
+
+.navbar {
+  background: #102227;
+}
+
+.form-wrapper {
+  position: relative;
+}
+
+/* start edit members */
+
+.form-edit-members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1140px) {
+  .form-edit-members div {
+    width: 100%;
+  }
+}
+
+/* eye password show hide */
+
+.pass-wrapper {
+  position: relative;
+}
+
+.eye-pass {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  color: #676767;
+  cursor: pointer;
+}
+
+/* manage members  */
+.main-table {
+  margin-bottom: 5px;
+  box-shadow: 0 0 6px -2px #191923;
+}
+
+.main-table thead td {
+  background-color: #191923;
+  color: white;
+}
+
+.main-table td {
+  background: #fff;
+  vertical-align: middle;
+}
+
+.main-table .btn {
+  padding: 3px 12px;
+}
+.main-table .btn i {
+  position: relative;
+  left: -5px;
+  top: 1px;
+}
+
+/* dashboard  */
+.dash .card-body h5 {
+  font-size: 50px;
+}
+
+.dash-2 .card {
+  padding: 0;
+}
+
+.latest-item {
+  padding: 6px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.latest-item:nth-child(even) {
+  background-color: #e1e7e7;
+}
+
+.cat-btns {
+  display: none;
+}
+
+.catItem:hover .cat-btns {
+  animation: cat-btns 0.4s ease;
+  display: block;
+  -webkit-animation: cat-btns 0.4s ease;
+}
+
+@keyframes cat-btns {
+  from {
+    transform: translateX(500px);
+    -webkit-transform: translateX(500px);
+    -moz-transform: translateX(500px);
+    -ms-transform: translateX(500px);
+    -o-transform: translateX(500px);
+  }
+}
+
+nav {
+  padding: 10px 10% !important;
+}
